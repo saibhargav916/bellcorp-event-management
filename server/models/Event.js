@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const mongoose = require("mongoose");
 
 const eventSchema = new mongoose.Schema({
@@ -33,39 +33,4 @@ const eventSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Event", eventSchema);
-=======
-const mongoose = require("mongoose");
 
-const eventSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true
-  },
-  organizer: {
-    type: String,
-    required: true
-  },
-  location: {
-    type: String,
-    required: true
-  },
-  date: {
-    type: Date,
-    required: true
-  },
-  description: {
-    type: String
-  },
-  capacity: {
-    type: Number,
-    required: true
-  },
-  category: {
-    type: String
-  }
-}, {
-  timestamps: true
-});
-
-module.exports = mongoose.model("Event", eventSchema);
->>>>>>> 9dbec2931f522b93ea3ea727b1b5a615b8705091
